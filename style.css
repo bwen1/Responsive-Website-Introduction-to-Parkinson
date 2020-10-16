@@ -52,6 +52,39 @@ header li a:hover:not(.active) {
     background-color: #ddd;
 }
 
+/* --- BREAD CRUMB (change up the code a bit) --- */
+/* Style the list */
+ul.breadcrumb {
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #eee;
+}
+
+/* Display list items side by side */
+ul.breadcrumb li {
+    display: inline;
+    font-size: 18px;
+}
+
+/* Add a slash symbol (/) before/behind each list item */
+ul.breadcrumb li + li:before {
+    padding: 8px;
+    color: black;
+    content: '/\00a0';
+}
+
+/* Add a color to all links inside the list */
+ul.breadcrumb li a {
+    color: #0275d8;
+    text-decoration: none;
+}
+
+/* Add a color on mouse-over */
+ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
+
 /* --- HOME PAGE --- */
 @media only screen and (min-width: 601px) {
     #cover {
@@ -64,7 +97,7 @@ header li a:hover:not(.active) {
                 rgba(0, 0, 0, 0.5),
                 rgba(0, 0, 0, 0.5)
             ),
-            url(images/flying_chicken.jpg);
+            url(images/bird.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
@@ -106,7 +139,7 @@ header li a:hover:not(.active) {
                 rgba(0, 0, 0, 0.5),
                 rgba(0, 0, 0, 0.5)
             ),
-            url(images/flying_chicken.jpg);
+            url(images/bird.jpg);
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
