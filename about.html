@@ -15,49 +15,42 @@
 
     <!-- Page Content -->
     <body id="container">
-      <header>
-        <ul id="nav">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="category_nature.html">Nature</a></li>
-            <li><a href="category_recreation.html">Recreation</a></li>
-            <li id="about">
-                <a class="active" href="about.html">About</a>
-            </li>
-        </ul>
-    </header>
+        <header>
+            <ul id="nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="category_nature.html">Nature</a></li>
+                <li><a href="category_recreation.html">Recreation</a></li>
+                <li id="about">
+                    <a class="active" href="about.html">About</a>
+                </li>
+            </ul>
+        </header>
+        <div id="cover">
+            <div class="hero-text">
+                <h1>About</h1>
+            </div>
+        </div>
+        <div id="aboutpage">
+            <div class="contacts">
+                <label>Name:</label>
+                <input type="text" placeholder="Your name.." />
 
-        <div id="content">
+                <label>Email:</label>
+                <input type="text" placeholder="Your email address.." />
 
-            <div class="row">
-                <div class="column">
-                  <div class="card">
-                    <img src="images/ibis.jpg" alt="Jane" style="width:100%">
-                    <div class="container">
-                      <h2>Jane Doe</h2>
-                      <p class="title">CEO &amp; Founder</p>
-                      <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                      <p>example@example.com</p>
-                      <p><button class="button">Contact</button></p>
-                    </div>
-                  </div>
-                </div>
-              
-                <div class="column">
-                  <div class="card">
-                    <img src="images/ibis.jpg" alt="Mike" style="width:100%">
-                    <div class="container">
-                      <h2>Mike Ross</h2>
-                      <p class="title">Art Director</p>
-                      <p>Some text that describes me lorem ipsum ipsum lorem.</p>
-                      <p>example@example.com</p>
-                      <p><button class="button">Contact</button></p>
-                    </div>
-                  </div>
-                </div>
-
+                <label>Message:</label>
+                <textarea
+                    name="message"
+                    rows="6"
+                    placeholder="Your message.."
+                ></textarea>
+                <button class="aboutbutton">Send Message</button>
+            </div>
         </div>
 
         <!-- Footer -->
-        <footer></footer>
+        <footer>
+            <small>&copy; Copyright 2020, Bill Wen</small>
+        </footer>
     </body>
 </html>
