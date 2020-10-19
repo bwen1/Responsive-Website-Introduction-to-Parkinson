@@ -20,6 +20,27 @@ body {
     margin-right: auto;
 }
 
+@media only screen and (max-width: 600px) {
+    .heading {
+        text-align: center;
+        font-size: 25px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .heading {
+        text-align: center;
+        font-size: 45px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .heading {
+        text-align: center;
+        font-size: 45px;
+    }
+}
+
 footer {
     position: fixed;
     left: 0;
@@ -132,36 +153,36 @@ header li a:hover:not(.active) {
     background-color: #ddd;
 }
 
-/* --- BREAD CRUMB (change up the code a bit) --- */
-/* Style the list */
-ul.breadcrumb {
-    padding: 10px 16px;
-    list-style: none;
-    background-color: #eee;
+/* --- BREAD CRUMB  --- */
+
+.breadcrumb-container {
+    margin-left: 5%;
+    margin-right: 5%;
 }
 
-/* Display list items side by side */
+ul.breadcrumb {
+    margin-left: -40px;
+    list-style: none;
+}
+
 ul.breadcrumb li {
     display: inline;
-    font-size: 18px;
+    font-size: 17px;
 }
 
-/* Add a slash symbol (/) before/behind each list item */
 ul.breadcrumb li + li:before {
-    padding: 8px;
+    padding: 7px;
     color: black;
     content: '/\00a0';
 }
 
-/* Add a color to all links inside the list */
 ul.breadcrumb li a {
-    color: #0275d8;
+    color: #0367be;
     text-decoration: none;
 }
 
-/* Add a color on mouse-over */
 ul.breadcrumb li a:hover {
-    color: #01447e;
+    color: #023868;
     text-decoration: underline;
 }
 
@@ -194,9 +215,8 @@ ul.breadcrumb li a:hover {
         color: white;
     }
 
-    #home_gallery h1 {
-        text-align: center;
-        font-size: 25px;
+    .hero-text p {
+        font-size: 17px;
     }
 
     div.gallery {
@@ -250,9 +270,8 @@ ul.breadcrumb li a:hover {
         font-size: 50px;
     }
 
-    #home_gallery h1 {
-        text-align: center;
-        font-size: 50px;
+    .hero-text p {
+        font-size: 28px;
     }
 
     div.gallery {
@@ -313,9 +332,8 @@ ul.breadcrumb li a:hover {
         font-size: 50px;
     }
 
-    #home_gallery h1 {
-        text-align: center;
-        font-size: 50px;
+    .hero-text p {
+        font-size: 30px;
     }
 
     div.gallery {
@@ -342,12 +360,6 @@ ul.breadcrumb li a:hover {
     }
 }
 
-/* Three columns side by side */
-
-/* Display the columns below each other instead of side by side on small screens */
-
-/* Add some shadows to create a card effect */
-
 /* --- CATEGORIES --- */
 
 @media only screen and (min-width: 992px) {
@@ -365,13 +377,11 @@ ul.breadcrumb li a:hover {
     padding: 15px;
 }
 
-/* Some left and right padding inside the container */
 .container {
     margin-right: auto;
     margin-left: auto;
 }
 
-/* Clear floats */
 .container::after,
 .row::after {
     content: '';
@@ -406,6 +416,65 @@ ul.breadcrumb li a:hover {
     }
     .container h2 {
         font-size: 35px;
+    }
+}
+
+/* --- LOCATIONS --- */
+
+@media only screen and (max-width: 600px) {
+    .location-container {
+        background-color: #f3f3f3;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 20px;
+        word-wrap: break-word;
+        font-size: 18px;
+    }
+    .location-container div div {
+        margin-bottom: 15px;
+    }
+
+    .location-image {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .location-container {
+        background-color: #f3f3f3;
+        margin-left: 5%;
+        margin-right: 5%;
+
+        padding: 20px;
+        word-wrap: break-word;
+        font-size: 25px;
+    }
+    .location-container div div {
+        margin-bottom: 50px;
+    }
+
+    .location-image {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .location-container {
+        background-color: #f3f3f3;
+        margin-left: 5%;
+        margin-right: 5%;
+        padding: 40px;
+        word-wrap: break-word;
+        font-size: 25px;
+    }
+
+    .location-image {
+        float: left;
+        width: 40%;
+        margin-bottom: 20px;
+        margin-right: 50px;
     }
 }
 
